@@ -15,10 +15,12 @@ def get_team_with_smallest_diff(data):
     smallest_difference = None
     team = None
 
+    # Read data using DictReader
     try:
         with open(data, 'rb') as f:
             reader = csv.DictReader(f)
             for row in reader:
+                # Calculate team difference.  Goals allowed might be higher than Goals. Return absolute value
                 team_difference = abs(int(row['Goals']) - int(row['Goals Allowed']))
                 if team_difference < smallest_difference or smallest_difference is None:
                     smallest_difference = team_difference
