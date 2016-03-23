@@ -46,7 +46,8 @@ cross-platform.
 
 Did you install Python 2 or 3? Why?  
 
->> I installed Python 2 (2.7.11). I have using Python 2 for 6 months, and I prefer to stick to version 2.
+>> I installed Python 2 (2.7.11). I have using Python 2 for 6 months, and I prefer to stick 
+to version 2.
 
 ###Q2. Which Python Version Installed   
 
