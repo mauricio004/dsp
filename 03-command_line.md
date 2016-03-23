@@ -28,7 +28,13 @@ What do the following commands do:
 `ls -t`  
 `ls -Glp`  
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > ls -> list directory  
+ls -a -> display all file
+ls -l -> display the long format listing
+ls -lh -> display the long format listing with size description
+ls -lah -> same as ls -lh but for all files
+ls -t -> display newest files first
+ls -Glp -> same as ls -l but with a / for directories
 
 ---
 
@@ -36,7 +42,11 @@ What do the following commands do:
 
 Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > ls -p -> display directories with /
+ls -lt -> display newest files first
+ls -R -> display subdirectories as well
+ls -r -> display files in reverse order
+ls -d -> display only directories
 
 ---
 
@@ -44,7 +54,10 @@ Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) 
 
 What does `xargs` do? Give an example of how to use it.
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > xargs executes command lines from standard input.
+It is useful when we combine it with other commands.
+
+
 
  
 

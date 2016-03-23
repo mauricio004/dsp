@@ -71,12 +71,12 @@ What graphical editor will you use? How did you make your decision? What are som
 
 Some useful shortcuts:
 
-Command / -- Comment/uncomment with line comment
-Shift F10 -- run
-F8 -- step over
-F7 -- step into
-Command F -- find
-Command R -- replace
+Command / -> Comment/uncomment with line comment
+Shift F10 -> run
+F8 -> step over
+F7 -> step into
+Command F -> find
+Command R -> replace
 
 To customize my editor -> Pycharm > Preferences.  
 
