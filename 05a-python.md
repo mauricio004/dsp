@@ -12,7 +12,7 @@ For quick and easy interactive practice with Python, many people enjoy [Codecade
 
 How are Python lists and tuples similar and different? Which will work as keys in dictionaries? Why?
 
->> Both lists and tuples are ordered sequence of values. Python identifies each value by an index.  The main difference is that lists are mutable and tuples are inmutable. 
+>> Both lists and tuples are ordered sequence of values.   Python identifies each value by an index.   The main difference is that lists are mutable and tuples are inmutable. 
 We use tuples as keys in dictionaries as they are inmutable.  
 
 ---
@@ -51,9 +51,9 @@ Explain list comprehensions. Give examples and show equivalents with `map` and `
 >> A list comprehension allow us to transform a list into another list.
 For example:  lst_comp = [2 * x for x in range(5)] creates a new list [0, 2, 4, 6, 8] 
 multiplying all elements of the list [0, 1, 2, 3, 4] by 2.  
-The equivalent using map: map(lambda x:2*x, range(5))
+The equivalent using map: map(lambda x:2*x, range(5)).  
 Filter allows us to filter out elements. For example we can filter out even elements from
-the list that range(5) generates. 
+the list that range(5) generates.   
 filter(lambda x:x%2 == 0, range(5)) - > [0, 2, 4]
 We can use a dictionary comprehensions to populate keys and values in a dictionary.
 d = {n: n * 2 for n in range(5)} --> {0: 0, 1: 2, 2: 4, 3: 6, 4: 18}
