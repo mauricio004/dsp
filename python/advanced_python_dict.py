@@ -41,4 +41,6 @@ def faculty_info_sorted(faculty_dict):
     return sorted(faculty_dict.items(), key=lambda key: key[0][1])
 
 
-
+d_data = read_data('faculty.csv')
+faculty_d = faculty_info(d_data)
+print faculty_info_sorted(faculty_d)
