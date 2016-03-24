@@ -1,11 +1,41 @@
 # -*- coding: utf-8 -*-
-
-from advanced_python_regex import read_data
-
 import re
 
 
 def faculty_info(data_dict):
+    # Dictionary with last name as key and lists with info
+    faculty_dictionary_by_name = {}
+
+    # Loop over faculty member to get last name and info
+    for faculty in data_dict.values():
+        # Create list with names
+        name = faculty['name'].split()
+        # Name has only one word or less
+        if len(name) < 2:
+            if name[0] not in faculty_dictionary_by_name:
+                faculty_dictionary_by_name[name[0]] = [[faculty[' degree'], faculty[' title'], faculty[' email']]]
+            else:
+                faculty_dictionary_by_name[name[0]] = faculty_dictionary_by_name[name[0]] + \
+                                                     [[faculty[' degree'], faculty[' title'], faculty[' email']]]
+        # Name has two words
+        elif len(name) == 2:
+            if name[1] not in faculty_dictionary_by_name:
+                faculty_dictionary_by_name[name[1]] = [[faculty[' degree'], faculty[' title'], faculty[' email']]]
+            else:
+                faculty_dictionary_by_name[name[1]] = faculty_dictionary_by_name[name[1]] + \
+                                                     [[faculty[' degree'], faculty[' title'], faculty[' email']]]
+        # Name has more than 2 words.
+        else:
+            if name[2] not in faculty_dictionary_by_name:
+                faculty_dictionary_by_name[name[2]] = [[faculty[' degree'], faculty[' title'], faculty[' email']]]
+            else:
+                faculty_dictionary_by_name[name[2]] = faculty_dictionary_by_name[name[2]] + \
+                                                     [[faculty[' degree'], faculty[' title'], faculty[' email']]]
+
+    return faculty_dictionary_by_name
+
+
+def faculty_info_with_tuple(data_dict):
 
     # Dictionary with tuple (first name, last name) as key and list with info as values
     faculty_dict = {}
@@ -39,8 +69,3 @@ def faculty_info(data_dict):
 def faculty_info_sorted(faculty_dict):
 
     return sorted(faculty_dict.items(), key=lambda key: key[0][1])
-
-
-d_data = read_data('faculty.csv')
-faculty_d = faculty_info(d_data)
-print faculty_info_sorted(faculty_d)
