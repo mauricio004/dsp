@@ -27,7 +27,7 @@ on the size of the set like for lists. Lists are faster when we iterate over the
 For example, we can have the following list:  
 lst = [1, 1, 2, 2, 3]  
 Now, we want to create a set from this list:  
-st = set(lst)  
+st = set(lst)    
 The new set contains {1, 2, 3}  
 ---
 
