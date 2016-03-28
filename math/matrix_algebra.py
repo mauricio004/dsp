@@ -76,3 +76,61 @@ print 'b raise to the 4', b ** 4, '\n'
 print 'a . a transpose = ', np.dot(a, np.transpose(a)), '\n'
 # 3.10
 print 'd transpose . d = ', np.dot(np.transpose(d), d), '\n'
+
+
+# # 1 Matrices Dimension
+#
+# a dimension: (2, 3)
+#
+# b dimension: (2, 2)
+#
+# c dimension: (3, 2)
+#
+# d dimension: (2, 3)
+#
+# u dimension: (4,)
+#
+# w dimension: (4, 1)
+#
+# # 2 Vector Operations, alpha = 6
+#
+# u + v =  [ 9  7 -4  9]
+#
+# u - v =  [ 3 -3 -2  1]
+#
+# alpha * u =  [ 36  12 -18  30]
+#
+# u * v =  [18 10  3 20]
+#
+# u norm =  8.60232526704
+#
+# # 3 Matrix Operations
+# a + b ---> not defined, a is a 2 x 3 and b is a 2 x 2 matrix
+#
+# a - c transpose =  [[-4 -7 -3]
+#  [ 3  6  4]]
+#
+# c transpose + 3 * d =  [[14  3  3]
+#  [ 2  7  9]]
+#
+# b . a =  [[-1 -5 -1]
+#  [ 2  7  4]]
+#
+# b . a transpose ---> not defined, b is a 2 x 2 and a transpose is a 3 x 2 matrix
+#
+# Optional
+# b . c ---> not defined, b is 2 x 2 and c is a 3 x 2 matrix
+#
+# c . b =  [[ 5 -6]
+#  [ 9 -8]
+#  [ 6 -6]]
+#
+# b raise to the 4 [[1 1]
+#  [0 1]]
+#
+# a . a transpose =  [[14 28]
+#  [28 69]]
+#
+# d transpose . d =  [[10 -4  0]
+#  [-4  8  8]
+#  [ 0  8 10]]
