@@ -1,0 +1,11 @@
+n lists and sets for finding an element. Why?
+
+>> A list stores an ordered collection of elements and a set stores an unordered collection of unique elements.
+Regarding performance, sets are faster when we want to find an object in a set.  When searching for objects in sets, the speed of this operation does not depend 
+on the size of the set like for lists. Lists are faster when we iterate over their content.  
+For example, we can have the following list:  
+lst = [1, 1, 2, 2, 3]  
+Now, we want to create a set from this list:  
+st = set(lst)  
+The new set contains {1, 2, 3}  
+   
